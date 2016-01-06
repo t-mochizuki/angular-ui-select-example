@@ -11,17 +11,18 @@ demo.controller('AnimalCtrl', ['$http',
   function ($http) {
 
     var vm = this;
-    vm.selected = null;
-    // vm.results = [
-    //   { id: 1, name: "dog" },
-    //   { id: 2, name: "cat" },
-    //   { id: 3, name: "panda" },
-    //   { id: 4, name: "snake" },
-    //   { id: 5, name: "bird" }
-    // ];
+    vm.selected2 = null;
 
     $http.get('animal/list').success(function(data) {
         vm.results = data;
     });
 
 }]);
+
+demo.directive('mySelect', function () {
+  return {
+    restrict: 'EA',
+    scope: false,
+    templateUrl: '/assets/views/mySelect.html'
+  }
+});

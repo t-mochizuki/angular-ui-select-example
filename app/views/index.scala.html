@@ -4,11 +4,7 @@
 
 <div ng-controller="AnimalCtrl as ctrl">
 
-  <div ui-select ng-model="ctrl.selected2" multiple>
-    <div ui-select-match>{{$item.name}}</div>
-    <div ui-select-choices repeat="l in ctrl.results|filter:$select.search">{{l.name}}</div>
-  <div>
-  <p>Nothing here {{results}}</p>
+  <my-select></my-select>
 
 </div>
 
