@@ -14,7 +14,7 @@ demo.controller('AnimalCtrl', ['$http',
     vm.selected2 = null;
 
     $http.get('animal/list').success(function(data) {
-        vm.results = data;
+        vm.allItems = data;
     });
 
 }]);
