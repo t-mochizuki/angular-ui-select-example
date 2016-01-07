@@ -11,7 +11,7 @@ demo.controller('AnimalCtrl', ['$http',
   function ($http) {
 
     var vm = this;
-    vm.selected2 = null;
+    vm.selectedItem = [];
 
     $http.get('animal/list').success(function(data) {
         vm.allItems = data;
