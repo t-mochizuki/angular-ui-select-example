@@ -4,7 +4,10 @@
 
 <div ng-controller="AnimalCtrl as ctrl">
 
-  <my-select all-items="ctrl.allItems" selected-item="ctrl.selectedItem"></my-select>
+  <my-select all-items="ctrl.ctrlAllItems" selected-item="ctrl.ctrlSelectedItem" input-text="ctrl.ctrlText"></my-select>
+
+  Ctrl
+  <input type="text" ng-model="ctrl.ctrlText">
 
 </div>
 

@@ -11,17 +11,20 @@ demo.controller('AnimalCtrl', ['$http',
   function ($http) {
 
     var vm = this;
-    vm.selectedItem = [];
+    vm.ctrlSelectedItem = [];
 
     $http.get('animal/list').success(function(data) {
-        vm.allItems = data;
+        vm.ctrlAllItems = data;
     });
+
+    vm.ctrlText = "";
 
 }]);
 
 demo.directive('mySelect', function () {
   return {
     scope: {
+      inputText: '=',
       selectedItem: '=',
       allItems: '='
     },
