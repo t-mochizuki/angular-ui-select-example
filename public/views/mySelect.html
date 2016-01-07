@@ -1,4 +1,4 @@
-<div ui-select ng-model="ctrl.selectedItem" multiple>
+<div ui-select ng-model="selectedItem" multiple>
   <div ui-select-match>{{$item.name}}</div>
-  <div ui-select-choices repeat="item in ctrl.allItems|filter:$select.search">{{item.name}}</div>
+  <div ui-select-choices repeat="item in allItems|filter:$select.search">{{item.name}}</div>
 </div>

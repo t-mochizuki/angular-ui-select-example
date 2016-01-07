@@ -21,8 +21,10 @@ demo.controller('AnimalCtrl', ['$http',
 
 demo.directive('mySelect', function () {
   return {
-    restrict: 'EA',
-    scope: false,
+    scope: {
+      selectedItem: '=',
+      allItems: '='
+    },
     templateUrl: '/assets/views/mySelect.html'
   }
 });
