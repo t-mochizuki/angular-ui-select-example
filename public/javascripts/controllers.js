@@ -24,7 +24,6 @@ demo.controller('AnimalCtrl', ['$http',
 demo.directive('mySelect', function () {
   return {
     scope: {
-      inputText: '=',
       selectedItem: '=',
       allItems: '='
     },
