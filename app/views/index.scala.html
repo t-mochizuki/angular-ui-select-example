@@ -7,7 +7,7 @@
   <my-select all-items="ctrl.ctrlAllItems" selected-item="ctrl.ctrlSelectedItem"></my-select>
 
   Ctrl
-  <input type="text" ng-model="ctrl.ctrlSelectedItem">
+  <input type="text" ng-model-options="{ updateOn: 'blur' }" ng-model="ctrl.ctrlSelectedItem">
 
 </div>
 
