@@ -1,7 +1,7 @@
 <div ng-model="selectedItem">
   <div ui-select>
     <div ui-select-match>{{$select.selected.name}}</div>
-    <div ui-select-choices repeat="item.id as item in allItems|filter:$select.search">{{::item.name}}</div>
+    <div ui-select-choices repeat="item.id as item in ::allItems|filter:$select.search">{{::item.name}}</div>
   </div>
 </div>
 
