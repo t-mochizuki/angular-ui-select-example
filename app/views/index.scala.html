@@ -2,6 +2,7 @@
 
 @main("Welcome to exmaple") {
 
+First controller
 <div ng-controller="AnimalCtrl as ctrl">
 
   <my-select all-items="ctrl.ctrlAllItems" selected-item="ctrl.ctrlSelectedItem"></my-select>
@@ -9,6 +10,12 @@
   Ctrl
   <input type="text" ng-model-options="{ updateOn: 'blur' }" ng-model="ctrl.ctrlSelectedItem">
 
+</div>
+
+Second controller
+<div ng-controller="AnimalCtrl as ctrl">
+  <input type="text" ng-model="ctrl.ctrlSelectedItem">
+  <div>{{ ctrl.ctrlSelectedItem }}</div>
 </div>
 
 }

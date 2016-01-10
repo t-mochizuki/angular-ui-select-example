@@ -11,13 +11,10 @@ demo.controller('AnimalCtrl', ['$http',
   function ($http) {
 
     var vm = this;
-    vm.ctrlSelectedItem = [];
-
     $http.get('animal/list').success(function(data) {
-        vm.ctrlAllItems = data;
+      vm.ctrlSelectedItem = data[0].id;
+      vm.ctrlAllItems = data;
     });
-
-    vm.ctrlText = "";
 
 }]);
 
